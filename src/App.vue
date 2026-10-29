@@ -14,12 +14,12 @@ const searchSubmitted = ref(false)
 const mobileMenuOpen = ref(false)
 
 const categories = [
-  { number: '01', title: 'Overheidsorganisaties', description: 'Ministeries, uitvoeringsorganisaties en publieke instellingen', count: 'Organisaties', icon: 'building' },
-  { number: '02', title: 'Wet- en regelgeving', description: 'Wetten, besluiten, regels en officiële publicaties', count: 'Regelgeving', icon: 'scale' },
-  { number: '03', title: 'Beleid & publicaties', description: 'Beleidsstukken, rapporten, brieven en plannen', count: 'Documenten', icon: 'file' },
-  { number: '04', title: 'Cijfers & statistieken', description: 'Data, indicatoren en onderzoek in context', count: 'Statistieken', icon: 'chart' },
-  { number: '05', title: 'Besluiten & parlement', description: 'Kamerstukken, besluiten en bestuurlijke dossiers', count: 'Besluiten', icon: 'landmark' },
-  { number: '06', title: 'Tijdlijnen & relaties', description: 'Ontdek hoe onderwerpen, organisaties en beleid samenhangen', count: 'Verbanden', icon: 'network' },
+  { number: '01', title: 'Overheidsorganisaties', description: 'Ministeries, uitvoeringsorganisaties en publieke instellingen', count: 'organisatie', icon: 'building' },
+  { number: '02', title: 'Wet- en regelgeving', description: 'Wetten, besluiten, regels en officiële publicaties', count: 'regelgeving', icon: 'scale' },
+  { number: '03', title: 'Beleid & publicaties', description: 'Beleidsstukken, rapporten, brieven en plannen', count: 'documenten', icon: 'file' },
+  { number: '04', title: 'Cijfers & statistieken', description: 'Data, indicatoren en onderzoek in context', count: 'statistiek', icon: 'chart' },
+  { number: '05', title: 'Besluiten & parlement', description: 'Kamerstukken, besluiten en bestuurlijke dossiers', count: 'parlement', icon: 'landmark' },
+  { number: '06', title: 'Tijdlijnen & relaties', description: 'Ontdek hoe onderwerpen, organisaties en beleid samenhangen', count: 'beleid', icon: 'network' },
 ]
 
 const entries: Entry[] = [
@@ -146,7 +146,7 @@ function clearSearch() {
               <span class="search-hints-label">Probeer bijvoorbeeld</span>
               <button type="button" @click="chooseCategory('klimaat')">klimaatbeleid</button>
               <button type="button" @click="chooseCategory('ministerie')">ministeries</button>
-              <button type="button" @click="chooseCategory('statistiek')">statistieken</button>
+              <button type="button" @click="chooseCategory('statistiek')">statistiek</button>
             </div>
             <div class="hero-assurance"><span class="assurance-icon" aria-hidden="true">↳</span><span>Bronnen en context horen bij elkaar.</span></div>
           </div>
