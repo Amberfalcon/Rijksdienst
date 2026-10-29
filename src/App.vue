@@ -19,7 +19,7 @@ const categories = [
   { number: '03', title: 'Beleid & publicaties', description: 'Beleidsstukken, rapporten, brieven en plannen', count: 'documenten', icon: 'file' },
   { number: '04', title: 'Cijfers & statistieken', description: 'Data, indicatoren en onderzoek in context', count: 'statistiek', icon: 'chart' },
   { number: '05', title: 'Besluiten & parlement', description: 'Kamerstukken, besluiten en bestuurlijke dossiers', count: 'parlement', icon: 'landmark' },
-  { number: '06', title: 'Tijdlijnen & relaties', description: 'Ontdek hoe onderwerpen, organisaties en beleid samenhangen', count: 'beleid', icon: 'network' },
+  { number: '06', title: 'Tijdlijnen & relaties', description: 'Ontdek hoe onderwerpen, organisaties en beleid samenhangen', count: 'verbanden', icon: 'network' },
 ]
 
 const entries: Entry[] = [
@@ -64,6 +64,13 @@ const entries: Entry[] = [
     description: 'Voorbeeld van een verzameling stukken met documenttype, datum, herkomst en gerelateerde dossiers.',
     updated: 'Voorbeeldrecord',
     tags: ['kamerstukken', 'parlement', 'documenten', 'besluiten'],
+  },
+  {
+    title: 'Relaties tussen beleid en organisaties',
+    type: 'Samenhang',
+    description: 'Voorbeeld van hoe verantwoordelijkheden, beleidsthema’s en publicaties via herleidbare relaties samenkomen.',
+    updated: 'Voorbeeldrecord',
+    tags: ['verbanden', 'relaties', 'samenhang', 'organisatie', 'beleid'],
   },
 ]
 
