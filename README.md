@@ -4,43 +4,53 @@ Rijksdienst is een informatieplatform in ontwikkeling dat overheidsinformatie ov
 
 Het platform is bedoeld om informatie over onder meer overheidsorganisaties, beleid, officiële documenten, statistieken, bronnen, geschiedenis en onderlinge relaties op één plek vindbaar te maken.
 
-> Dit project is onafhankelijk in ontwikkeling en is geen officiële website van de Nederlandse overheid.
+> **Let op:** dit is een onafhankelijk project in ontwikkeling en geen officiële website van de Nederlandse overheid. De informatie op de eerste startpagina is demonstratie-inhoud en geen geverifieerde overheidsinformatie.
 
-## Doel
+## Eerste frontend
 
-Een moderne, toegankelijke en betrouwbare omgeving bouwen waarin gebruikers niet alleen informatie kunnen vinden, maar ook de context en relaties tussen informatiebronnen kunnen begrijpen.
+De eerste interface bevat:
+- Een responsieve startpagina in het Nederlands.
+- Een zoekervaring die werkt op lokale voorbeeldgegevens.
+- Zes ingangen naar verschillende soorten overheidsinformatie.
+- Uitgelichte themablokken die laten zien hoe beleid, documenten en cijfers kunnen samenhangen.
+- Expliciete aanduidingen voor voorbeeldinhoud.
+- Een mobiel navigatiemenu en toetsenbordfocus-stijlen.
 
-## Ontwerpprincipes
+## Lokaal starten
 
-- **Vindbaarheid eerst:** zoeken en navigeren moeten eenvoudig en voorspelbaar zijn.
-- **Bronvermelding:** maak duidelijk waar informatie vandaan komt en wanneer die is bijgewerkt.
-- **Context en relaties:** verbind organisaties, beleid, documenten en gegevens waar dat nuttig is.
-- **Toegankelijkheid:** werk toe naar WCAG-conforme interacties, toetsenbordbediening en leesbare contrasten.
-- **Modulair:** begin klein met herbruikbare onderdelen en breid uit wanneer echte behoeften duidelijk worden.
-- **Responsief:** ondersteun mobiel, tablet en desktop.
+Benodigd: een recente Node.js LTS-versie en npm.
 
-## Technische richting
+```powershell
+npm.cmd install
+npm.cmd run dev
+```
 
-De eerste frontend wordt opgezet met:
+Open daarna de lokale URL die Vite in de terminal toont.
+
+Controleer de productiebuild met:
+
+```powershell
+npm.cmd run build
+```
+
+## Techniek
 
 - Vue 3
 - TypeScript
 - Vite
-- CSS met herbruikbare design tokens en componentstijlen
+- CSS met herbruikbare ontwerpvariabelen en responsieve componentstijlen
 
-In de eerste fase gebruiken we representatieve voorbeeldgegevens. Een backend, database en koppelingen met officiële databronnen worden pas toegevoegd wanneer de frontendstructuur helder is.
+De startpagina gebruikt op dit moment uitsluitend statische voorbeeldgegevens. Er is nog geen backend, database of koppeling met officiële databronnen.
 
-## Eerste ontwikkelfasen
+## Richting
 
-1. Basisstructuur en startpagina.
+1. Startpagina en basisnavigatie.
 2. Zoekervaring en overzichtelijke informatiecategorieën.
 3. Herbruikbare pagina's voor organisaties, documenten en beleid.
 4. Relaties, tijdlijnen en bronvermelding.
 5. Backend, gegevensmodel en gecontroleerde koppelingen met bronnen.
 6. Tests, toegankelijkheidscontrole en documentatie.
 
-## Status
+## Ontwerpgrondslag
 
-Vroege ontwikkelfase. Inhoud en voorbeeldgegevens zijn nog niet bedoeld als officiële overheidsinformatie.
-
-Zie docs/FRONTEND_FOUNDATION.md voor de frontend-grondslag.
+Zie [docs/FRONTEND_FOUNDATION.md](docs/FRONTEND_FOUNDATION.md) voor de uitgangspunten rond productvisie, UX, componenten, techniek en toegankelijkheid.
